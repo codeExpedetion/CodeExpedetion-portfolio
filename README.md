@@ -27,6 +27,13 @@ A modern portfolio website built using **React + Vite**, styled with **TailwindC
 
 ---
 
+## 🛠️ Local Setup
+```
+npm install
+npm run dev
+```
+---
+
 ## 📂 Project Structure
 
 ```bash
