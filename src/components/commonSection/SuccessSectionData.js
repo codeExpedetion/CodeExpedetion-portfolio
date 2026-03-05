@@ -36,8 +36,10 @@ export const successSectionData = {
     description: "Discover how we've helped retail businesses enhance their digital presence and drive remarkable growth through innovative solutions."
   },
   '/industries/healthcare': {
-    title: "Revolutionizing Healthcare Delivery",
-    description: "Learn how we've empowered healthcare organizations to deliver better patient outcomes through cutting-edge technology solutions."
+    title: "Transform Your Healthcare Practice",
+    description: "Learn how we've empowered healthcare organizations to deliver better patient outcomes through cutting-edge technology solutions.",
+    ctaText: "Explore Our Services",
+    ctaTo: "/services"
   },
   '/industries/education': {
     title: "Empowering Educational Excellence",
@@ -48,36 +50,48 @@ export const successSectionData = {
     description: "See how we've helped law firms modernize their practices and deliver superior client service through technology innovation."
   },
   '/industries/finance': {
-    title: "Transforming Financial Services",
-    description: "Discover how we've helped financial institutions enhance security, improve efficiency, and deliver exceptional customer experiences."
+    title: "Accelerate Fintech Innovation",
+    description: "Discover how we've helped fintech companies enhance security, improve efficiency, and deliver exceptional customer experiences through AI-driven innovation."
   },
-  '/industries/real-estate': {
-    title: "Elevating Real Estate Operations",
-    description: "Learn how we've helped real estate businesses streamline operations and enhance client experiences through digital innovation."
-  },
+  // '/industries/real-estate': {
+  //   title: "Elevating Real Estate Operations",
+  //   description: "Learn how we've helped real estate businesses streamline operations and enhance client experiences through digital innovation."
+  // },
   '/industries/hospitality': {
-    title: "Redefining Hospitality Excellence",
-    description: "Explore how we've helped hospitality businesses deliver exceptional guest experiences and operational efficiency."
+    // title: "Redefining Hospitality Excellence",
+    title: "Engineering Excellence in Every Solution",
+    // description: "Explore how we've helped hospitality businesses deliver exceptional guest experiences and operational efficiency."
+    description: "Discover how we've helped enterprises transform their technical landscape and achieve sustainable growth through precision engineering.",
+    ctaText: "View Our Services",
+    ctaTo: "/services"
   },
-  '/industries/events': {
-    title: "Powering Memorable Events",
-    description: "See how we've helped event organizers create unforgettable experiences through innovative technology solutions."
+  // '/industries/events': {
+  //   title: "Powering Memorable Events",
+  //   description: "See how we've helped event organizers create unforgettable experiences through innovative technology solutions."
+  // },
+  // '/industries/media': {
+  //   title: "Transforming Media Experiences",
+  //   description: "Discover how we've helped media companies engage audiences and monetize content through cutting-edge platforms."
+  // },
+  // '/industries/logistics': {
+  //   title: "Optimizing Logistics Operations",
+  //   description: "Learn how we've helped logistics companies improve efficiency and reduce costs through smart technology solutions."
+  // },
+  // '/industries/manufacturing': {
+  //   title: "Advancing Manufacturing Excellence",
+  //   description: "Explore how we've helped manufacturers increase productivity and quality through digital transformation."
+  // },
+  // '/industries/telecom': {
+  //   title: "Connecting the Future",
+  //   description: "See how we've helped telecom providers deliver superior connectivity and customer experiences through innovation."
+  // },
+  '/industries/saas': {
+    title: "Accelerating SaaS Growth",
+    description: "Build, scale, and thrive in the cloud. We've helped SaaS founders and enterprises launch multi-tenant platforms that scale to millions of users seamlessly."
   },
-  '/industries/media': {
-    title: "Transforming Media Experiences",
-    description: "Discover how we've helped media companies engage audiences and monetize content through cutting-edge platforms."
-  },
-  '/industries/logistics': {
-    title: "Optimizing Logistics Operations",
-    description: "Learn how we've helped logistics companies improve efficiency and reduce costs through smart technology solutions."
-  },
-  '/industries/manufacturing': {
-    title: "Advancing Manufacturing Excellence",
-    description: "Explore how we've helped manufacturers increase productivity and quality through digital transformation."
-  },
-  '/industries/telecom': {
-    title: "Connecting the Future",
-    description: "See how we've helped telecom providers deliver superior connectivity and customer experiences through innovation."
+  '/industries/hrms': {
+    title: "Modernizing Workforce Management",
+    description: "Empower your HR with intelligent automation. We've transformed HR operations for global teams, improving engagement and operational efficiency through custom HRMS solutions."
   },
   '/insights': {
     title: "Knowledge-Driven Growth",
@@ -110,5 +124,6 @@ export const successSectionData = {
   '/contact': {
     title: "Your Project, Our Priority",
     description: "We bring a senior engineering mindset to every engagement. Let's discuss how our expertise can accelerate your business objectives."
-  }
+  },
 };
+

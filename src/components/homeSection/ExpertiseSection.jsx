@@ -14,8 +14,9 @@ const aiSolutionIcons = {
 
 // Icon mapping for services
 const serviceIcons = {
-  'Custom Software Engineering': Code,
-  'Cloud & Data Infrastructure': Database,
+  // 'Custom Software Engineering': Code,
+  'Application Development': Code,
+  'Cloud Service': Database,
   'On-Demand Talent Augmentation': Users
 };
 

@@ -135,7 +135,7 @@ const AIMLSuccessStory = ({ data }) => {
                 </div>
               </div>
               <a
-                href="/success-stories"
+                href="/use-cases"
                 className="inline-flex items-center gap-3 text-white bg-text-primary px-10 py-4 rounded-full font-bold hover:bg-brand-primary transition-all duration-300 shadow-xl hover:-translate-y-1 group"
               >
                 {data.exploreCTAText}

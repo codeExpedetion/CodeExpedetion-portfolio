@@ -32,7 +32,7 @@ const SuccessStories = () => {
         onIndustryToggle={handleIndustryToggle}
       />
 
-      {/* Success Stories Grid Section */}
+      {/* Use Cases Grid Section */}
       <SuccessStoriesGrid successStories={filteredSuccessStories} />
     </div>
   );

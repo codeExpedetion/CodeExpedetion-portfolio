@@ -1,4 +1,4 @@
-import { FileText, Lightbulb, Database, Shield, Users, ShoppingCart, Stethoscope, GraduationCap, Scale, Map, Layout, Zap, BookOpen } from 'lucide-react';
+import { FileText, Lightbulb, Database, Shield, Users, ShoppingCart, Stethoscope, GraduationCap, Scale, Map, Layout, Zap, BookOpen, LayoutDashboard } from 'lucide-react';
 
 export const headerData = [
   {
@@ -7,26 +7,26 @@ export const headerData = [
     type: "simple",
     items: [
       {
-        title: "AI & Machine Learning",
+        title: "AI Services",
         desc: "Automate processes with intelligent, self-learning algorithms",
         href: "/services/ai",
         icon: Lightbulb
       },
       {
-        title: "Custom Software Engineering",
+        title: "Application Development",
         desc: "Tailored web and mobile platforms built for scale",
         href: "/services/app-dev",
         icon: Layout
       },
       {
-        title: "Cloud Infrastructure",
-        desc: "Robust, scalable, and secure cloud ecosystems",
+        title: "Cloud Service",
+        desc: "Scalable, secure cloud ecosystems and seamless data migrations",
         href: "/services/cloud",
         icon: Database
       },
       {
         title: "Security & Compliance",
-        desc: "Enterprise-grade protection and regulatory alignment",
+        desc: "AI security, regulatory frameworks, and enterprise-grade data protection",
         href: "/services/compliance",
         icon: Shield
       },
@@ -51,16 +51,18 @@ export const headerData = [
         icon: ShoppingCart
       },
       {
-        title: "HealthTech",
+        title: "Healthcare",
         desc: "Secure patient data and telemedicine solutions",
         href: "/industries/healthcare",
         icon: Stethoscope
       },
       {
-        title: "EdTech",
-        desc: "Platforms that power modern learning",
+        // title: "EdTech",
+        title: "IT Solutions",
+        // desc: "Platforms that power modern learning",
+        desc: "Tailored IT strategies and managed technology services",
         href: "/industries/education",
-        icon: GraduationCap
+        icon: LayoutDashboard
       },
       {
         title: "LegalTech",
@@ -72,8 +74,10 @@ export const headerData = [
     footerLink: { text: "View all Industries", href: "/industries" }
   },
   {
-    label: "Success Stories",
-    href: "/success-stories",
+    // label: "Success Stories",
+    label: "Use Cases",
+    // href: "/success-stories",
+    href: "/use-cases",
     type: "link"
   },
   {

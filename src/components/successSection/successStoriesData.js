@@ -22,18 +22,112 @@ import financial4SquareImage from '../../assets/SuccessStories/financial-4-squar
 import trackingUnlimitedImage from '../../assets/SuccessStories/tracking-unlimited.svg';
 import erpBuddyImage from '../../assets/SuccessStories/erpbuddy.webp';
 
-// All 23 success stories data
+// All 23 use cases data
 export const successStoriesHero = {
-  title: "Success Stories",
-  searchPlaceholder: "Search success stories by title, technology, or industry..."
+  // title: "Success Stories",
+  title: "Use Cases",
+  // searchPlaceholder: "Search success stories by title, technology, or industry..."
+  searchPlaceholder: "Search use cases by title, technology, or industry..."
 };
 
 export const successStoriesContent = {
-  noResultsMessage: "No success stories found matching your criteria.",
+  // noResultsMessage: "No success stories found matching your criteria.",
+  noResultsMessage: "No use cases found matching your criteria.",
   keyResultsLabel: "Key Results:"
 };
 
 export const successStories = [
+  {
+    id: 1,
+    title: "Upmail: Customer Engagement Platform for Hotel Sales Teams with Integrated Booking Systems",
+    description: "Upmail enables hotel sales teams to send branded emails, personalized contracts, and event booking details by integrating with Opera, Meeting Broker, Amadeus, and Salesforce for seamless proposals.",
+    image: null,
+    industry: "SaaS",
+    keyResults: [
+      "Streamlined hotel sales communication with branded email templates and personalized proposal generation.",
+      "Integrated real-time booking data from Opera, Amadeus, and Salesforce directly into client proposals.",
+      "Accelerated response times and improved conversion rates by automating proposal and contract workflows.",
+    ],
+    technologies: ["Ruby on Rails", "Python", "Elixir", "VueJs", "Heroku", "Sentry"],
+    slug: "upmail"
+  },
+  {
+    id: 2,
+    title: "FitForever: Personalized Assessment-Based Digital Fitness Platform with Trainer-Led Programs",
+    description: "FitForever delivers customized video-based training programs developed with top medical and biomechanics experts, enabling trainers to sell programs and users to track progress via the FIT Score.",
+    image: null,
+    industry: "Fitness",
+    keyResults: [
+      "Delivered personalized assessment-based training programs optimized for individual fitness goals and needs.",
+      "Enabled trainers to create, manage, and sell programs directly through the platform for revenue growth.",
+      "Built a mobile app with proprietary FIT Score tracking and integrated referral system for user growth.",
+    ],
+    technologies: ["Ruby on Rails", "Python", "VueJs", "Flutter", "AWS", "Datadog", "Rollbar"],
+    slug: "fitforever"
+  },
+  {
+    id: 3,
+    title: "Xponential Fitness: Multi-Brand Boutique Fitness Franchise Platform with Modular Architecture",
+    description: "We built a scalable, configurable platform for Xponential Fitness to manage multiple boutique fitness brands across thousands of franchise locations with centralized operations and brand-specific customizations.",
+    image: null,
+    industry: "Fitness",
+    keyResults: [
+      "Designed modular multi-brand architecture with shared core services and brand-specific feature configurations.",
+      "Unified reporting, analytics, and membership management across all franchise brands and studio locations.",
+      "Enhanced franchisee dashboards with real-time performance tracking and streamlined operational workflows.",
+    ],
+    technologies: ["Rails", "React", "React Native", "Heroku"],
+    slug: "xpo"
+  },
+  {
+    id: 4,
+    title: "The NOW Massage: Modern Wellness Platform Migration from WordPress to Scalable Custom Architecture",
+    description: "We migrated The NOW Massage from a legacy WordPress system to a modern custom-built architecture, improving performance and scalability while building a unified franchise management dashboard.",
+    image: null,
+    industry: "Wellness",
+    keyResults: [
+      "Migrated from WordPress to a custom-built architecture, eliminating performance bottlenecks and lag issues.",
+      "Built a centralized admin dashboard for managing bookings, staff, and operations across franchise locations.",
+      "Implemented enterprise-level scalability with load balancing, caching, and optimized backend processing.",
+    ],
+    technologies: ["Ruby on Rails", "React", "React Native", "Heroku"],
+    slug: "now-massage"
+  },
+  {
+    id: 5,
+    title: "Aggero: AI-Powered Video Intelligence Platform for Data-Driven Creative Optimization",
+    description: "Aggero's AI analyzes every frame, hook, and audience reaction across TikTok, YouTube, and Instagram to predict video performance and generate actionable creative briefs for marketers.",
+    image: null,
+    industry: "MarTech",
+    keyResults: [
+      "Built AI engine that analyzes video elements to identify engagement drivers and performance drainers.",
+      "Enabled content performance prediction before publishing, reducing testing cycles from weeks to hours.",
+      "Automated creative brief generation with audience intelligence for data-backed campaign strategies.",
+    ],
+    technologies: ["Ruby on Rails", "NodeJs", "ReactJS", "Heroku"],
+    slug: "aggero"
+  },
+  {
+    id: 6,
+    title: "Forio: Interactive Simulation Platform for Business Strategy and Decision-Making Training",
+    description: "Forio provides an interactive simulation platform that enables organizations to model complex business scenarios, train teams through experiential learning, and make data-driven strategic decisions.",
+    image: null,
+    industry: "EdTech",
+    keyResults: [
+      "Built an interactive simulation engine for modeling complex business scenarios and strategic decision-making.",
+      "Enabled experiential learning programs used by leading universities and Fortune 500 companies worldwide.",
+      "Developed real-time analytics dashboards to track participant performance and learning outcome metrics.",
+    ],
+    technologies: ["Ruby on Rails", "Python", "React", "D3.js", "AWS", "PostgreSQL"],
+    slug: "forio"
+  }
+];
+
+/* ========================================
+   ARCHIVED USE CASE CARDS (commented out)
+   ======================================== */
+/*
+const archivedSuccessStories = [
   {
     id: 1,
     title: "Uptok: Revolutionizing Digital Customer Engagement Through High-Performance Integrated Video Commerce Platforms",
@@ -102,251 +196,28 @@ export const successStories = [
   {
     id: 6,
     title: "CABA Design: Client Meeting Optimization and Integrated CRM Solutions for Architecture and Interior Designers",
-    description: "How we helped CABA Design create an innovative system to capture, transcribe, and search meeting insights, enhancing client communication and team collaboration by transforming recordings into actionable tasks.",
     image: operatorCabaImage,
     industry: "Design Tech",
-    keyResults: [
-      "Minimized meeting review time by over eighty percent using automated transcription and extraction tools.",
-      "Enhanced attention to client needs by ensuring every detail mentioned during meetings is captured today.",
-      "Improved consistency in project execution by centralizing all design feedback in a searchable database.",
-    ],
-    technologies: ["React.js", "Whisper AI", "Node.js", "Postgres", "TailwindCSS", "Recoil", "AWS Lambda", "Next.js"]
   },
-  {
-    id: 7,
-    title: "Uptok Video: Scaling High-Impact Personalization for Luxury E-Commerce Brands Thru Real-Time Interactivity",
-    description: "How we implemented a high-performance video communication protocol for Uptok, allowing luxury retailers to engage high-intent shoppers through face-to-face digital consultations that drive massive revenue.",
-    image: uptokImage,
-    industry: "E-Commerce",
-    keyResults: [
-      "Enabled seamless real-time video sessions between sales associates and luxury customers around the globe.",
-      "Reduced latency for high-definition video streams to ensure a premium and lag-free experience for users.",
-      "Integrated customer intent data to trigger video invitations at the perfect moment for higher conversions.",
-    ],
-    technologies: ["WebRTC", "Kurento", "Redis", "Node.js", "React.js", "Terraform", "Docker", "Prometheus"]
-  },
-  {
-    id: 7,
-    title: "Uptok Video: Scaling High-Impact Personalization for Luxury E-Commerce Brands Through Real-Time Customer Interactivity",
-    description: "How we implemented a high-performance video communication protocol for Uptok, allowing luxury retailers to engage high-intent shoppers through face-to-face digital consultations that drive massive revenue for brands.",
-    image: uptokImage,
-    industry: "E-Commerce",
-    keyResults: [
-      "Enabled seamless real-time video sessions between sales associates and luxury customers around the globe.",
-      "Reduced latency for high-definition video streams to ensure a premium and lag-free experience for users.",
-      "Integrated customer intent data to trigger video invitations at the perfect moment for higher conversions.",
-    ],
-    technologies: ["WebRTC", "Kurento", "Redis", "Node.js", "React", "Terraform", "Docker", "Prometheus"]
-  },
-  {
-    id: 8,
-    title: "Helmer Legal: Custom Case Management Platform and Automated CSV Workflows for Large-Scale Immigration Law Operations",
-    description: "How we built a comprehensive case management platform for Helmer Legal with over one hundred attorneys, featuring role-based access and automated CSV workflows for maximum speed and accuracy today.",
-    image: helmerCaseImage,
-    industry: "Legal Tech",
-    keyResults: [
-      "Streamlined case management for over one hundred attorneys by automating the repetitive generation.",
-      "Integrated Outlook calendar scheduling and real-time requirement updates to ensure high compliance.",
-      "Automated complex CSV import and export workflows that reduced manual data entry time significantly.",
-    ],
-    technologies: ["React.js", "Node.js", "TypeScript", "Postgres", "GraphQL", "Outlook", "Twilio", "SendGrid"]
-  },
-  {
-    id: 9,
-    title: "Multi-Brand E-Commerce: Scalable Magento platform for Limoges Jewelry, PBS Kids Shop, and Global Retailers Everywhere",
-    description: "How we built and maintained scalable Magento-based e-commerce platforms for multiple retail brands including Limoges Jewelry and PBS Kids Shop with custom storefronts and automated management today.",
-    image: pbsImage,
-    industry: "E-Commerce",
-    keyResults: [
-      "Multi-brand storefronts delivered with a unified backend architecture for easy management of catalogs.",
-      "Automated catalog management and inventory synchronization that reduced overhead for the sales team.",
-      "Scalable architecture for growth that supports seasonal traffic spikes and high-volume transactions.",
-    ],
-    technologies: ["Magento 2", "PHP 8", "MySQL", "JavaScript", "Stripe API", "Authorize.Net", "PayPal", "Redis"]
-  },
-  {
-    id: 10,
-    title: "Kenmore: Custom Product Catalog Management and Flexible Admin Interface for Large-Scale Home Appliance Operations",
-    description: "How we built a custom Ruby on Rails application for Kenmore to manage their extensive product catalog with a flexible admin interface and scalable architecture for seamless operations globally.",
-    image: kenmoreImage,
-    industry: "E-Commerce",
-    keyResults: [
-      "Streamlined catalog management with a custom interface that allows for rapid updates to products.",
-      "Improved efficiency with bulk operations and automated data validation that ensured consistent info.",
-      "Scalable architecture for growth which currently supports thousands of SKUs and millions of requests.",
-    ],
-    technologies: ["Ruby on Rails", "Postgres", "Redis", "AWS S3", "Elastic", "Sidekiq", "Docker", "Devise"]
-  },
-  {
-    id: 11,
-    title: "JennAir: Reinventing the Luxury Appliance Experience Through Integrated Concept Mobile Apps and Learning Systems Now",
-    description: "How we helped JennAir reimagine customer and retailer interactions with concept mobile apps and AEM-powered catalogs that deliver premium appliance experiences for high-end luxury consumers today.",
-    image: jennairImage,
-    industry: "Luxury Tech",
-    keyResults: [
-      "Enhanced customer and retailer interactions using concept mobile apps that provide deep discovery.",
-      "Implemented high-performance learning platforms that educate consumers on advanced device features.",
-      "Streamlined product catalog management with AEM integration to ensure consistent branding for all.",
-    ],
-    technologies: ["React Native", "AEM", "SAP Commerce", "Node.js", "AWS Cloud", "GraphQL", "Storybook", "Typescript"]
-  },
-  {
-    id: 12,
-    title: "Medisked: Performance Optimization and Cloud Migration for Healthcare Data Systems Supporting Shared Care Plans Fast",
-    description: "How we collaborated with Medisked to optimize their healthcare data management platform, improving system performance by over fifty percent and ensuring high availability for critical care services.",
-    image: mediskedImage,
-    industry: "Health Tech",
-    keyResults: [
-      "Improved system performance and response times by over fifty percent for complex data query files.",
-      "Ensured high availability and data integrity for critical care by implementing cloud infrastructure.",
-      "Simplified data reporting and analytics workflows for providers, allowing for better outcome tracking.",
-    ],
-    technologies: ["Angular", "Node.js", "SQL Server", "Azure", "Docker", "Kubernetes", "Power BI", "Express"]
-  },
-  {
-    id: 13,
-    title: "RCBS MatchMaster: Precision Engineering and Smart Bluetooth Connectivity for Professional Grade Load Equipment Systems",
-    description: "Developing a sophisticated Bluetooth-enabled application for the RCBS MatchMaster scale, allowing professional handloaders to achieve unparalleled precision and consistency for their ammunition now.",
-    image: rcbsImage,
-    industry: "Precision Tech",
-    keyResults: [
-      "Achieved unparalleled precision in handloading operations by providing real-time local connectivity.",
-      "Improved user consistency and safety through automated validation checks and historical logging fast.",
-      "Delivered a high-performance, low-latency mobile experience that functions excellently everywhere.",
-    ],
-    technologies: ["Flutter", "Firebase", "BLE Tech", "Node.js", "D3.js", "SQLite", "Material UI", "Dart"]
-  },
-  {
-    id: 14,
-    title: "Halyard Health: Advanced Sterilization Monitoring and Healthcare Compliance Solutions for Modern Medical Centers Today",
-    description: "How we helped Halyard Health build digital tools to monitor sterilization processes and ensure compliance with medical standards, reducing the risk of healthcare-associated infections globally now.",
-    image: halyardImage,
-    industry: "Medical Systems",
-    keyResults: [
-      "Reduced the risk of infections by providing real-time monitoring of sterilization cycles for all.",
-      "Ensured strict compliance with medical standards through automated documentation and audits daily.",
-      "Improved operational efficiency for sterile processing by providing maintenance alerts for teams.",
-    ],
-    technologies: ["React.js", "Node.js", "Postgres", "AWS Cloud", "PDF Gen", "IoT Gateway", "MQTT", "TailwindCSS"]
-  },
-  {
-    id: 15,
-    title: "Craftsman: Integrated Smart Tool Ecosystem and Mobile Maintenance Solutions for Professional Trades and DIY Builders",
-    description: "How we built a connected tool ecosystem for Craftsman, allowing users to track performance, manage settings, and receive alerts through a unified mobile application that enhances productivity fast.",
-    image: craftsmanImage,
-    industry: "Industrial Tech",
-    keyResults: [
-      "Enhanced productivity on job sites by allowing users to track tool performance and safety alerts.",
-      "Improved tool management for professional crews through integrated inventory tracking systems today.",
-      "Delivered a high-performance mobile experience with offline capabilities for any environments now.",
-    ],
-    technologies: ["React Native", "BLE Connectivity", "Firebase", "Node.js", "Redux", "Sentry", "App Center", "Lottie"]
-  },
-  {
-    id: 16,
-    title: "KitchenAid: Elevating Global Digital Experience through Adobe Experience Manager and Unified Design Standards Now",
-    description: "How we helped KitchenAid enhance their digital presence on kitchenaid.com using Adobe Experience Manager, delivering seamless navigation and brand-consistent designs for premium lines globally.",
-    image: kitchenaidImage,
-    industry: "Luxury Retail",
-    keyResults: [
-      "Enhanced navigation with a sophisticated mega menu system that allows users to explore items well.",
-      "Ensured pixel-perfect brand consistency across digital touchpoints by using design tokens today.",
-      "Improved cross-platform stability and performance by optimizing assets and caching strategies fast.",
-    ],
-    technologies: ["AEM", "JavaScript", "HTML5", "CSS3", "Java", "Figma", "Sightly", "OSGi Framework"]
-  },
-  {
-    id: 17,
-    title: "Meltzer Hellrung: Strategic Immigration Compliance Systems and Enterprise Level Case Management for Tech Groups",
-    description: "How we developed a custom immigration compliance platform for Meltzer Hellrung that enables tech giants and startups to manage legal filings with automated notifications and status updates daily.",
-    image: meltzerHellrungImage,
-    industry: "Legal Tech",
-    keyResults: [
-      "Streamlined immigration compliance for thousands of foreign nationals by automating the process now.",
-      "Improved legal outcomes and filing accuracy through automated checks and updates on federal laws.",
-      "Enabled secure enterprise-grade communication between attorneys and HR through a unified portal.",
-    ],
-    technologies: ["React.js", "Node.js", "AWS Lambda", "PostgreSQL", "SendGrid", "Formik", "AWS S3", "Stripe API"]
-  },
-  {
-    id: 18,
-    title: "College Advisor: Revolutionizing College Admissions Guidance Through Scalable Digital Mentorship and Systems",
-    description: "How we transformed the admissions guidance industry by building a platform that grew from eight hundred to over two million active users, helping more than eight thousand families navigate everything.",
-    image: collegeAdmissionImage,
-    industry: "EdTech",
-    keyResults: [
-      "Grew user base from eight hundred to over two million active users by implementing cloud systems.",
-      "Guided more than eight thousand families successfully through complex cycles with advisory tools.",
-      "Connected students with over three hundred expert advisors globally using matching algorithms now.",
-    ],
-    technologies: ["React.js", "TypeScript", "Node.js", "PostgreSQL", "AWS Amplify", "Redis", "Next.js", "TailwindCSS"]
-  },
-  {
-    id: 19,
-    title: "RealRepp: Transforming Talent Recruitment with Custom Applicant Tracking Systems and Automated Candidate Flows",
-    description: "How we helped RealRepp build a custom Applicant Tracking System that revolutionized their recruitment processes and grew to manage over five thousand active candidates with enhanced efficiency.",
-    image: realreppImage,
-    industry: "HR Tech",
-    keyResults: [
-      "Manages over five thousand active candidates with high-performance database and rapid discovery.",
-      "Handles more than five hundred unique job listings simultaneously with automated applicant grading.",
-      "Became an industry-leading recruitment platform by providing customized tools for data decisions.",
-    ],
-    technologies: ["React.js", "Node.js", "Redux", "Postgres", "Elastic", "Docker", "CI/CD", "Sentry Cloud"]
-  },
-  {
-    id: 20,
-    title: "NLP: Modernizing National Media Literacy Platforms and Integrated Educational Dashboards for American Schools",
-    description: "How we helped the News Literacy Project transform their legacy PHP platforms into modern, scalable solutions reaching millions of students across the United States with innovative new features.",
-    image: newsLiteracyImage,
-    industry: "Nonprofit Tech",
-    keyResults: [
-      "Integrated with over thirteen hundred schools to provide media analysis tools for students today.",
-      "Launched an innovative Election Dashboard that tracks media narratives in real-time for students.",
-      "Unified authentication across multiple educational platforms to create a seamless user journey fast.",
-    ],
-    technologies: ["Next.js", "React.js", "NestJS", "TypeORM", "Postgres", "AWS SDK", "Passport", "Storybook"]
-  },
-  {
-    id: 21,
-    title: "PathForward: Next-Gen Pharmaceutical Formulation Platforms and Automated Drug Development Compliance Workflow",
-    description: "How we built a state-of-the-art digital platform that revolutionized pharmaceutical and dietary supplement formulation processes with streamlined workflows and compliance monitoring for all.",
-    image: pathForwardImage,
-    industry: "Healthcare",
-    keyResults: [
-      "Streamlined entire FDA approval process by automating formulation documentation and adherence fast.",
-      "Enabled mobile formula management and ingredient sourcing for laboratory teams for collaboration.",
-      "Integrated global ingredient sourcing and inventory tracking systems to ensure quality compliance.",
-    ],
-    technologies: ["React.js", "React Native", "NestJS", "TypeORM", "Postgres", "Swagger", "Docker", "Auth0"]
-  },
-  {
-    id: 22,
-    title: "Financial Foursquare: Transforming Financial Advice Delivery Thru Automated Checklists and Integrated Pillars",
-    description: "How we built a digital platform that revolutionized how financial advisors deliver value to their clients through automated checklists and the innovative Four-Pillar Program for planning always.",
-    image: financial4SquareImage,
-    industry: "FinTech",
-    keyResults: [
-      "Digitized complex financial advisory workflows using automated check-lists that ensure consistency.",
-      "Implemented the innovative Four-Pillar Program as a digital interactive experience for all users.",
-      "Enhanced client collaboration and engagement levels through a secure mobile portal for progress.",
-    ],
-    technologies: ["React.js", "Node.js", "Typescript", "Express", "Postgres", "GCP Cloud", "Chart.js", "JWT Auth"]
-  },
-  {
-    id: 23,
-    title: "Print Refinery: Modernizing Print Management Operations Thru Custom Laboratory Information and LIMS Systems",
-    description: "How we built a custom Laboratory Information Management System (LIMS) that transformed print management and product delivery operations for streamlined B2B2C workflows across retail networks fast.",
-    image: trackingUnlimitedImage,
-    industry: "Print Tech",
-    keyResults: [
-      "Automated the entire order lifecycle management process for custom print products for consumers.",
-      "Integrated multiple secure payment systems and shipping providers to create B2B2C operations now.",
-      "Streamlined complex print laboratory operations by providing real-time production tracking checks.",
-    ],
-    technologies: ["React.js", "NestJS", "Typescript", "GraphQL", "Postgres", "AWS S3", "Stripe API", "ApexCharts"]
-  }
+  { id: 7, title: "Uptok Video (duplicate 1)", image: uptokImage, industry: "E-Commerce" },
+  { id: 8, title: "Uptok Video (duplicate 2)", image: uptokImage, industry: "E-Commerce" },
+  { id: 9, title: "Helmer Legal", image: helmerCaseImage, industry: "Legal Tech" },
+  { id: 10, title: "Multi-Brand E-Commerce", image: pbsImage, industry: "E-Commerce" },
+  { id: 11, title: "Kenmore", image: kenmoreImage, industry: "E-Commerce" },
+  { id: 12, title: "JennAir", image: jennairImage, industry: "Luxury Tech" },
+  { id: 13, title: "Medisked", image: mediskedImage, industry: "Health Tech" },
+  { id: 14, title: "RCBS MatchMaster", image: rcbsImage, industry: "Precision Tech" },
+  { id: 15, title: "Halyard Health", image: halyardImage, industry: "Medical Systems" },
+  { id: 16, title: "Craftsman", image: craftsmanImage, industry: "Industrial Tech" },
+  { id: 17, title: "KitchenAid", image: kitchenaidImage, industry: "Luxury Retail" },
+  { id: 18, title: "Meltzer Hellrung", image: meltzerHellrungImage, industry: "Legal Tech" },
+  { id: 19, title: "College Advisor", image: collegeAdmissionImage, industry: "EdTech" },
+  { id: 20, title: "RealRepp", image: realreppImage, industry: "HR Tech" },
+  { id: 21, title: "NLP", image: newsLiteracyImage, industry: "Nonprofit Tech" },
+  { id: 22, title: "PathForward", image: pathForwardImage, industry: "Healthcare" },
+  { id: 23, title: "Financial Foursquare", image: financial4SquareImage, industry: "FinTech" },
+  { id: 24, title: "Print Refinery", image: trackingUnlimitedImage, industry: "Print Tech" },
 ];
-
+*/
 
 

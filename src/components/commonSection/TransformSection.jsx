@@ -25,37 +25,41 @@ const TransformSection = ({ title, description, primaryCTA, secondaryCTA }) => {
 
           {/* Action Links */}
           <div className="flex flex-col sm:flex-row items-center justify-center gap-6">
-            <Link
-              to={primaryCTA.to}
-              className="group inline-flex items-center justify-center px-8 py-4 text-base font-bold text-white bg-brand-primary hover:bg-brand-primaryDark rounded-xl transition-all duration-300 shadow-xl shadow-brand-primary/20 active:scale-95"
-            >
-              {primaryCTA.text}
-              <svg
-                className="w-5 h-5 ml-2 transition-transform duration-300 transform group-hover:translate-x-1"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-                xmlns="http://www.w3.org/2000/svg"
+            {primaryCTA && (
+              <Link
+                to={primaryCTA.to}
+                className="group inline-flex items-center justify-center px-8 py-4 text-base font-bold text-white bg-brand-primary hover:bg-brand-primaryDark rounded-xl transition-all duration-300 shadow-xl shadow-brand-primary/20 active:scale-95"
               >
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2.5" d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
-              </svg>
-            </Link>
+                {primaryCTA.text}
+                <svg
+                  className="w-5 h-5 ml-2 transition-transform duration-300 transform group-hover:translate-x-1"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2.5" d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
+                </svg>
+              </Link>
+            )}
 
-            <Link
-              to={secondaryCTA.to}
-              className="group inline-flex items-center justify-center text-base font-bold text-text-primary hover:text-brand-primary transition-all duration-300 active:scale-95"
-            >
-              {secondaryCTA.text}
-              <svg
-                className="w-5 h-5 ml-2 transition-transform duration-300 transform group-hover:translate-x-1"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-                xmlns="http://www.w3.org/2000/svg"
+            {secondaryCTA && (
+              <Link
+                to={secondaryCTA.to}
+                className="group inline-flex items-center justify-center text-base font-bold text-text-primary hover:text-brand-primary transition-all duration-300 active:scale-95"
               >
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2.5" d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
-              </svg>
-            </Link>
+                {secondaryCTA.text}
+                <svg
+                  className="w-5 h-5 ml-2 transition-transform duration-300 transform group-hover:translate-x-1"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2.5" d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
+                </svg>
+              </Link>
+            )}
           </div>
         </div>
       </Container>

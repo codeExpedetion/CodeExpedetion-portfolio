@@ -13,13 +13,14 @@ const useSectionVisibility = () => {
   const noSectionPages = ['/careers', '/not-found'];
 
   // Pages that require ONLY TransformSection
-  const onlyTransformPages = ['/success-stories'];
+  const onlyTransformPages = ['/use-cases'];
+  const isUseCaseDetail = pathname.startsWith('/use-cases/');
 
   // Check if the current page is a 404/NotFound (simplified for this structure)
   // In a more complex app, this might need more robust checking  !Important for Future-Reference
   const isNotFound = !successSectionData[pathname] && !transformSectionData[pathname] && !noSectionPages.includes(pathname);
 
-  const showSuccess = !noSectionPages.includes(pathname) && !onlyTransformPages.includes(pathname) && !isNotFound;
+  const showSuccess = !noSectionPages.includes(pathname) && !onlyTransformPages.includes(pathname) && !isUseCaseDetail && !isNotFound;
   const showTransform = !noSectionPages.includes(pathname) && !isNotFound;
 
   const successData = successSectionData[pathname] || null;

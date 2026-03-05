@@ -77,7 +77,7 @@ const SuccessStoryCard = ({ study, index = 0 }) => {
 
         {/* Technologies - Fixed at 2 lines */}
         <div className="mt-auto pt-6 border-t border-border-subtle/30">
-          <div className="flex flex-wrap gap-x-2 gap-y-2.5 min-h-[4rem] content-start">
+          <div className="flex flex-wrap gap-x-2 gap-y-2.5 min-h-[4rem] content-start mb-6">
             {study.technologies.slice(0, 8).map((tech, idx) => (
               <span
                 key={idx}
@@ -87,6 +87,17 @@ const SuccessStoryCard = ({ study, index = 0 }) => {
               </span>
             ))}
           </div>
+
+          {/* Learn More Link */}
+          {study.slug && (
+            <Link
+              to={`/use-cases/${study.slug}`}
+              className="inline-flex items-center gap-2 text-brand-primary text-sm font-bold hover:gap-3 transition-all duration-300"
+            >
+              Learn More
+              <ArrowRight className="w-4 h-4" />
+            </Link>
+          )}
         </div>
       </div>
     </Card>

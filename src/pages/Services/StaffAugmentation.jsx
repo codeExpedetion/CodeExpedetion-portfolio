@@ -25,11 +25,11 @@ const StaffAugmentation = () => {
       />
 
       {/* Areas of Expertise List */}
-      <ServiceList
+      {/* <ServiceList
         title={data.expertiseSection.title}
         description={data.expertiseSection.description}
         items={data.expertiseSection.items}
-      />
+      /> */}
 
       {/* Engagement Process Section */}
       <ServiceProcess
