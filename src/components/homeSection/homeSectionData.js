@@ -44,8 +44,10 @@ export const homeSectionData = {
       to: "/contact"
     },
     secondaryCTA: {
-      text: "View Success Stories",
-      to: "/success-stories"
+      // text: "View Success Stories",
+      text: "View Use Cases",
+      // to: "/success-stories"
+      to: "/use-cases"
     },
     socialProof: {
       title: "Trusted by Industry Leaders",
@@ -73,7 +75,8 @@ export const homeSectionData = {
     title: "Trusted by Industry Leaders",
     description: "With decades of combined experience, we empower organizations globally to achieve their full potential through cutting-edge technology and strategic innovation. Our results speak for themselves.",
     ctaText: "Why companies choose CodeExpedition",
-    ctaLink: "/success-stories",
+    // ctaLink: "/success-stories",
+    ctaLink: "/use-cases",
     logos: [
       { src: whirlpoolLogo, alt: 'Whirlpool' },
       { src: kitchenaidLogo, alt: 'KitchenAid' },
@@ -129,14 +132,15 @@ export const homeSectionData = {
     // Secondary Services
     services: [
       {
-        title: "Custom Software Engineering",
+        // title: "Custom Software Engineering",
+        title: "Application Development",
         description: "Build scalable, future-proof applications architectures designed for performance and rapid evolution.",
         tags: ["Web", "Mobile Apps", "Enterprise Software"],
         link: "/services/app-dev",
         linkText: "Learn More"
       },
       {
-        title: "Cloud & Data Infrastructure",
+        title: "Cloud Service",
         description: "Enterprise-grade cloud architectures ensuring security, redundancy, and optimal data performance.",
         tags: ["AWS", "Google Cloud", "Microsoft Azure"],
         link: "/services/cloud",
@@ -173,8 +177,10 @@ export const homeSectionData = {
           { text: "AI ORCHESTRATION AGENT", variant: "primary" }
         ],
         technologies: ["AI ORCHESTRATION AGENT", "React.js", "Node.js", "WebRTC"],
-        link: "/success-stories",
-        linkText: "View Success Story",
+        // link: "/success-stories",
+        link: "/use-cases",
+        // linkText: "View Success Story",
+        linkText: "View Use Case",
         layout: "text-left"
       },
       {
@@ -187,13 +193,17 @@ export const homeSectionData = {
           { text: "HEALTHCARE TECH", variant: "secondary" }
         ],
         technologies: ["Vue.js", "Python", "Google Cloud", "PostgreSQL"],
-        link: "/success-stories",
-        linkText: "View Success Story",
+        // link: "/success-stories",
+        link: "/use-cases",
+        // linkText: "View Success Story",
+        linkText: "View Use Case",
         layout: "image-left"
       }
     ],
-    ctaText: "View All Success Stories",
-    ctaLink: "/success-stories"
+    // ctaText: "View All Success Stories",
+    ctaText: "View All Use Cases",
+    // ctaLink: "/success-stories"
+    ctaLink: "/use-cases"
   },
 
   // Feedback Section Data

@@ -2,7 +2,8 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import Container from '../ui/Container';
 
-const SuccessSection = ({ title, description }) => {
+// const SuccessSection = ({ title, description, ctaText = "View Our Success Stories", ctaTo = "/success-stories" }) => {
+const SuccessSection = ({ title, description, ctaText = "View Our Use Cases", ctaTo = "/use-cases" }) => {
   return (
     <section className="relative overflow-hidden bg-gradient-to-br from-text-primary to-text-secondary py-16 lg:py-24">
       {/* Background Decorative Elements */}
@@ -25,10 +26,10 @@ const SuccessSection = ({ title, description }) => {
 
           {/* CTA Button */}
           <Link
-            to="/success-stories"
+            to={ctaTo}
             className="group inline-flex items-center justify-center px-8 py-4 text-base font-bold text-text-primary bg-white hover:bg-brand-secondary rounded-xl transition-all duration-300 shadow-xl shadow-black/20 active:scale-95"
           >
-            View Our Success Stories
+            {ctaText}
             <svg
               className="w-5 h-5 ml-2 transition-transform duration-300 transform group-hover:translate-x-1"
               fill="none"

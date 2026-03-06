@@ -1,12 +1,12 @@
-import { Lightbulb, Layout, Database, Shield, ShoppingCart, Stethoscope, GraduationCap, Scale, Map, Zap, BookOpen, ArrowRight } from 'lucide-react';
+import { Lightbulb, Layout, Database, Shield, ShoppingCart, Stethoscope, GraduationCap, Scale, Map, Zap, BookOpen, ArrowRight, LayoutDashboard } from 'lucide-react';
 
 export const footerData = {
   services: {
     title: "Services",
     items: [
-      { title: "AI & Machine Learning", href: "/services/ai", icon: Lightbulb },
-      { title: "Software Engineering", href: "/services/app-dev", icon: Layout },
-      { title: "Cloud Infrastructure", href: "/services/cloud", icon: Database },
+      { title: "AI Services", href: "/services/ai", icon: Lightbulb },
+      { title: "Application Development", href: "/services/app-dev", icon: Layout },
+      { title: "Cloud Service", href: "/services/cloud", icon: Database },
       { title: "Security & Compliance", href: "/services/compliance", icon: Shield },
     ],
     footerLink: { text: "Explore all Services", href: "/services", icon: ArrowRight }
@@ -15,8 +15,13 @@ export const footerData = {
     title: "Industries",
     items: [
       { title: "Commerce & Retail", href: "/industries/retail", icon: ShoppingCart },
-      { title: "HealthTech", href: "/industries/healthcare", icon: Stethoscope },
-      { title: "EdTech", href: "/industries/education", icon: GraduationCap },
+      {
+        title: "Healthcare",
+        href: "/industries/healthcare",
+        icon: Stethoscope
+      },
+      // { title: "EdTech", href: "/industries/education", icon: GraduationCap },
+      { title: "IT Solutions", href: "/industries/education", icon: LayoutDashboard },
       { title: "LegalTech", href: "/industries/legal", icon: Scale },
     ],
     footerLink: { text: "View all Industries", href: "/industries", icon: ArrowRight }
@@ -35,7 +40,8 @@ export const footerData = {
     title: "Company",
     items: [
       { title: "About", href: "/about" },
-      { title: "Success Stories", href: "/success-stories" },
+      // { title: "Success Stories", href: "/success-stories" },
+      { title: "Use Cases", href: "/use-cases" },
       { title: "Careers", href: "/careers" },
       { title: "Contact", href: "/contact" },
     ]

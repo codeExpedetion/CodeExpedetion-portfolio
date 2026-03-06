@@ -19,7 +19,7 @@ const FeaturedSection = () => {
           </p>
         </div>
 
-        {/* Success Stories Container */}
+        {/* Use Cases Container */}
         <div className="space-y-8 md:space-y-10">
           {successStories.map((successStory) => (
             <div

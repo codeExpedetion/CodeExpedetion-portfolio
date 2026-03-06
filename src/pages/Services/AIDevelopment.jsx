@@ -177,32 +177,43 @@ const AIDevelopment = () => {
         </Container>
       </section>
 
-      {/* 4. MCP Server Development */}
+      {/* 4. AI Workflow & Enterprise Integration */}
       <AIMLPointCards
         title={data.mcpServerSection.title}
         description={data.mcpServerSection.description}
         cards={data.mcpServerSection.cards}
       />
 
-      {/* 5. Leading AI Development Frameworks */}
+      {/* 5. Technologies We Use */}
       <AIMLFrameworks
         title={data.frameworksSection.title}
         description={data.frameworksSection.description}
         items={data.frameworksSection.frameworks}
       />
 
-      {/* 6. Large Language Models We Work With */}
+      {/* 6. LLM Integration & Custom AI Solutions */}
       <AIMLFrameworks
         title={data.llmSection.title}
         description={data.llmSection.description}
         items={data.llmSection.models}
       />
 
-      {/* 7. Transform Your Business with AI */}
+      {/* 7. Industries We Serve */}
       <AIMLBenefits
-        title={data.transformBusinessSection.title}
-        description={data.transformBusinessSection.description}
-        benefits={data.transformBusinessSection.benefits}
+        title={data.industryUseCasesSection.title}
+        description={data.industryUseCasesSection.description}
+        benefits={data.industryUseCasesSection.benefits}
+      />
+
+      {/* 8. Our AI Implementation Process */}
+      <AIMLPointCards
+        title={data.processSection.title}
+        description={data.processSection.description}
+        cards={data.processSection.steps.map(step => ({
+          title: `Step ${step.number}: ${step.title}`,
+          points: [step.description], // Passed as an array of points to satisfy AIMLPointCards
+          icon: CheckCircle // Adding a default fallback icon
+        }))}
       />
 
       {/* 8. Success Story: 4Corners Legal */}

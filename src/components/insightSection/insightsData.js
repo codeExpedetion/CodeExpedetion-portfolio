@@ -202,7 +202,8 @@ export const insightsData = {
         ]
       },
       {
-        title: "AI & Machine Learning",
+        // title: "AI & Machine Learning",
+        title: "Artificial Intelligence Services",
         description: "Cutting-edge artificial intelligence solutions",
         technologies: [
           { name: "watsonx Orchestrate", icon: watsonxIcon },
