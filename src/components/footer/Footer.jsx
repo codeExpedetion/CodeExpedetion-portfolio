@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Linkedin, Twitter, Github, Instagram, Facebook, ArrowRight } from 'lucide-react';
+import { Linkedin, Github, Instagram, ArrowRight } from 'lucide-react';
 import LogoContainer from '../ui/LogoContainer';
 import { footerData } from './footerData';
 
@@ -26,22 +26,13 @@ const Footer = () => {
             {/* Social Icons */}
             <div className="flex items-center gap-6">
               <a
-                href="https://linkedin.com"
+                href="https://www.linkedin.com/company/code-expedition/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-white/60 hover:text-brand-primary transition-colors duration-300"
                 aria-label="LinkedIn"
               >
                 <Linkedin className="w-6 h-6" />
-              </a>
-              <a
-                href="https://twitter.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-white/60 hover:text-brand-primary transition-colors duration-300"
-                aria-label="Twitter"
-              >
-                <Twitter className="w-6 h-6" />
               </a>
               <a
                 href="https://github.com"
@@ -60,15 +51,6 @@ const Footer = () => {
                 aria-label="Instagram"
               >
                 <Instagram className="w-6 h-6" />
-              </a>
-              <a
-                href="https://facebook.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-white/60 hover:text-brand-primary transition-colors duration-300"
-                aria-label="Facebook"
-              >
-                <Facebook className="w-6 h-6" />
               </a>
             </div>
           </div>

@@ -2,29 +2,19 @@
 import googleLogo from '../../assets/HomePage/google.webp';
 import clutchLogo from '../../assets/HomePage/clutch.webp';
 import chexpassLogo from '../../assets/HomePage/chexpass.svg';
-import craftsmanLogo from '../../assets/Common/craftsman.svg';
-import halyardLogo from '../../assets/Common/halyard.svg';
-import kitchenaidLogo from '../../assets/Common/kitchenaid.svg';
+import foriioLogo from '../../assets/Common/foriio.png';
+import upmailLogo from '../../assets/Common/upmail-bg.png';
+import xponentialLogo from '../../assets/HomePage/xponential.png';
 import newsLiteracyLogo from '../../assets/Common/news-literacy-project.svg';
-import pathForwardLogo from '../../assets/Common/path-forward-formulator.svg';
-import whirlpoolLogo from '../../assets/HomePage/whirlpool.svg';
-import collegeAdmissionLogo from '../../assets/Common/college-admission.png';
-import featured1 from '../../assets/HomePage/featured1.webp';
-import featured2 from '../../assets/HomePage/featured2.webp';
-import brianMitchell from '../../assets/HomePage/brian-mitchell.webp';
-import bobBoyle from '../../assets/HomePage/bob-boyle.webp';
-import mikaelEdwards from '../../assets/HomePage/mikael-edwards.webp';
-import avatarPlaceholder from '../../assets/HomePage/avatar-placeholder-ab.svg';
+import aggeroLogo from '../../assets/Common/aggero-bg-rm.png';
+import fitForeverLogo from '../../assets/HomePage/fit-forever.png';
+import theNowLogo from '../../assets/Common/thenow.png';
+import upmailHomeImg from '../../assets/HomePage/upmail-home-img.jpeg';
+import xpoStudio from '../../assets/HomePage/xpo-studio.jpeg';
 import retailIllustration from '../../assets/HomePage/Industries1.svg';
 import healthcareIllustration from '../../assets/HomePage/Industries2.svg';
-import educationIllustration from '../../assets/HomePage/Industries3.svg';
+import saasIllustration from '../../assets/HomePage/Industries3.svg';
 import legalIllustration from '../../assets/HomePage/Industries4.svg';
-import jenniairLogo from '../../assets/Common/jennair.svg';
-import aimedLogo from '../../assets/HomePage/aimed.svg';
-import diagnossLogo from '../../assets/Common/diagnoss.svg';
-import nlpEducationLogo from '../../assets/HomePage/nlp-education.svg';
-import universalBeanCountersLogo from '../../assets/HomePage/universal-bean-counters.svg';
-import fourCornersLogo from '../../assets/Common/4-corners.webp';
 import cursorLogo from '../../assets/HomePage/cursor.webp';
 import claudeLogo from '../../assets/HomePage/claude.webp';
 import openaiLogo from '../../assets/HomePage/openai.svg';
@@ -34,9 +24,8 @@ export const homeSectionData = {
   // Hero Section Data
   hero: {
     headline: {
-      line1: "Deploy Faster",
-      line2: "Engineer Excellence",
-      line3: "Scale Without Limits"
+      line1: "Scale Faster with",
+      line2: "Elite Engineering Talent",
     },
     subtext: "We empower visionary companies to streamline their development lifecycle with cutting-edge AI integration, ensuring rapid delivery without compromising on reliability or performance.",
     primaryCTA: {
@@ -78,14 +67,14 @@ export const homeSectionData = {
     // ctaLink: "/success-stories",
     ctaLink: "/use-cases",
     logos: [
-      { src: whirlpoolLogo, alt: 'Whirlpool' },
-      { src: kitchenaidLogo, alt: 'KitchenAid' },
+      { src: fitForeverLogo, alt: 'Fit Forever' },
+      { src: xponentialLogo, alt: 'Xponential' },
       { src: newsLiteracyLogo, alt: 'News Literacy Project' },
-      { src: pathForwardLogo, alt: 'Path Forward' },
+      { src: aggeroLogo, alt: 'Aggero' },
       { src: chexpassLogo, alt: 'Chexpass' },
-      { src: collegeAdmissionLogo, alt: 'College Admission' },
-      { src: craftsmanLogo, alt: 'Craftsman' },
-      { src: halyardLogo, alt: 'Halyard' }
+      { src: theNowLogo, alt: 'The NOW' },
+      { src: foriioLogo, alt: 'Foriio' },
+      { src: upmailLogo, alt: 'Upmail' }
     ]
   },
 
@@ -168,33 +157,33 @@ export const homeSectionData = {
     successStories: [
       {
         id: 1,
-        title: "Uptok: Redefining Digital Sales via Personal Connection",
-        description: "How we helped Uptok bring a human touch to digital commerce through personalized, one-on-one video interactions, increasing conversion rates by 30% and average order values by 20%. We also built their AI agent using AI ORCHESTRATION AGENT.",
-        image: featured1,
-        imageAlt: "Uptok Platform",
+        title: "UpMail: Transforming Hotel Sales Communication Through Personalized Digital Experiences",
+        description: "How we helped UpMail enhance the way hotel sales teams engage prospects by building a scalable platform for personalized proposals, branded communications, and sales automation. The solution streamlined workflows, improved sales consistency across global hotel groups, and provided actionable engagement insights that empowered teams to close more deals faster.",
+        image: upmailHomeImg,
+        imageAlt: "UpMail Platform",
         badges: [
-          { text: "E-COMMERCE", variant: "secondary" },
-          { text: "AI ORCHESTRATION AGENT", variant: "primary" }
+          { text: "CRM", variant: "secondary" },
+          { text: "Marketing Automation", variant: "primary" }
         ],
-        technologies: ["AI ORCHESTRATION AGENT", "React.js", "Node.js", "WebRTC"],
+        technologies: ["React.js", "Ruby on Rails", "WebRTC", "Elixir", "PostgreSQL", "Heroku"],
         // link: "/success-stories",
-        link: "/use-cases",
+        link: "/use-cases/upmail",
         // linkText: "View Success Story",
         linkText: "View Use Case",
         layout: "text-left"
       },
       {
         id: 2,
-        title: "PathForward: Next-Gen Pharmaceutical Formulation",
-        description: "Our engineers built a high-performance digital foundation to automate complex formulation data. By optimizing workflow orchestration, the platform achieved a 40% gain in research efficiency, accelerating development from lab to market.",
-        image: featured2,
-        imageAlt: "PathForward Analytics",
+        title: "Xponential: Powering Growth Across a Global Fitness Franchise Ecosystem",
+        description: "How we helped Xponential streamline operations and enhance digital experiences across its portfolio of leading fitness and wellness brands. By building scalable technology solutions that supported franchise growth, member engagement, and business intelligence, we enabled a more connected ecosystem serving thousands of studios and fitness enthusiasts worldwide.",
+        image: xpoStudio,
+        imageAlt: "Xponential Fitness Platform",
         badges: [
-          { text: "HEALTHCARE TECH", variant: "secondary" }
+          { text: "Health & Wellness", variant: "secondary" }
         ],
-        technologies: ["Vue.js", "Python", "Google Cloud", "PostgreSQL"],
+        technologies: ["React.js", "Ruby on Rails", "Node.js", "AWS", "PostgreSQL"],
         // link: "/success-stories",
-        link: "/use-cases",
+        link: "/use-cases/xpo",
         // linkText: "View Success Story",
         linkText: "View Use Case",
         layout: "image-left"
@@ -213,35 +202,31 @@ export const homeSectionData = {
     testimonials: [
       {
         id: 1,
-        name: 'Brian Mitchell',
+        name: 'Mike Nu***',
         title: 'CEO',
-        company: 'US News College Advisor',
-        image: brianMitchell,
-        quote: 'CodeExpedition impressed us with their ability to digest requirements and come back with great ideas. Their communication was exceptional throughout the project.'
+        company: 'Xponential Fitness',
+        quote: 'Partnering with Code Expedition allowed us to accelerate our digital fitness initiatives and deliver a world-class streaming experience to our members. Their expertise in building scalable platforms helped us launch live and on-demand workouts while maintaining a seamless user experience across our fitness brands.'
       },
       {
         id: 2,
-        name: 'Bob Boyle',
-        title: 'Director of Brands',
-        company: 'Sears',
-        image: bobBoyle,
-        quote: 'CodeExpedition excelled with project timing and met our demanding requirements, delivering great results across multiple big projects including Smart Lawn and Craftsman Club.'
+        name: 'Raymond H',
+        title: 'Co-Founder',
+        company: 'LegalAtoms',
+        quote: 'Code Expedition helped us transform our vision of accessible legal services into a scalable, user-friendly platform. Their team built seamless workflows for case preparation, document generation, and online filing, making it easier for individuals to navigate complex legal processes. They were a trusted technology partner from concept to execution.'
       },
       {
         id: 3,
-        name: 'Mikael Edwards',
-        title: 'CEO',
-        company: 'TrueReview',
-        image: mikaelEdwards,
-        quote: 'CodeExpedition was crucial in launching TrueReview, quickly adapting to our existing application and codebase from another development company.'
+        name: 'Gara P***',
+        title: 'Co-Founder',
+        company: 'The Now',
+        quote: 'As our business continued to grow, we needed a platform that could scale with us. Code Expedition led the migration from our legacy WordPress application to a modern full-stack solution, significantly improving performance, reliability, and user experience. Their expertise helped us build a stronger digital foundation for the future.'
       },
       {
         id: 4,
-        name: 'Andy Beering',
-        title: 'Project Manager',
-        company: 'Citco Design',
-        image: avatarPlaceholder,
-        quote: 'CodeExpedition routinely hit deadlines and reacted to change requests quickly. They were very communicative and took great interest in developing the software as if building it for themselves.'
+        name: 'Antoine As****',
+        title: 'CEO',
+        company: 'Upmail Solutions',
+        quote: 'As our platform continued to grow, we faced scalability challenges and several critical issues that impacted performance. Code Expedition stepped in to stabilize the application, resolve complex bugs, and modernize key parts of our platform. Their work significantly improved reliability, scalability, and the overall user experience, enabling us to better serve our customers.'
       }
     ]
   },
@@ -256,7 +241,6 @@ export const homeSectionData = {
         title: 'Retail & E-commerce',
         illustration: retailIllustration,
         description: 'Intelligent digital experiences that boost client loyalty and optimize business workflows.',
-        logos: [jenniairLogo, craftsmanLogo],
         link: '/industries/retail',
         linkText: 'More'
       },
@@ -265,17 +249,15 @@ export const homeSectionData = {
         title: 'Healthcare',
         illustration: healthcareIllustration,
         description: 'Robust, regulated systems that transform clinical workflows and elevate patient experiences.',
-        logos: [aimedLogo, diagnossLogo],
         link: '/industries/healthcare',
         linkText: 'More'
       },
       {
         id: 3,
-        title: 'Education',
-        illustration: educationIllustration,
-        description: 'Dynamic learning apps that tailor educational paths and drive success for every learner.',
-        logos: [nlpEducationLogo, collegeAdmissionLogo],
-        link: '/industries/education',
+        title: 'SaaS',
+        illustration: saasIllustration,
+        description: 'Build scalable, high-performance SaaS platforms with multi-tenant architecture, secure payments, and advanced analytics.',
+        link: '/industries/saas',
         linkText: 'More'
       },
       {
@@ -283,7 +265,6 @@ export const homeSectionData = {
         title: 'Legal',
         illustration: legalIllustration,
         description: 'Advanced data tools for automated discovery, case analysis, and superior client advocacy.',
-        logos: [universalBeanCountersLogo, fourCornersLogo],
         link: '/industries/legal',
         linkText: 'More'
       }
@@ -361,7 +342,7 @@ export const homeSectionData = {
     stats: [
       {
         id: 1,
-        value: "150+",
+        value: "50+",
         title: "Projects Delivered",
         description: "Across various industries"
       },

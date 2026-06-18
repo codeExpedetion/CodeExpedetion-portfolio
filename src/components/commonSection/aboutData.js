@@ -16,7 +16,7 @@ export const aboutStory = {
 };
 
 export const aboutStats = [
-  { label: "High-Performance Projects", value: "150+" },
+  { label: "High-Performance Projects", value: "50+" },
   { label: "Client Satisfaction", value: "95%" },
   { label: "Engineering Heritage", value: "8+ Yrs" },
   { label: "International Partnerships", value: "50+" }

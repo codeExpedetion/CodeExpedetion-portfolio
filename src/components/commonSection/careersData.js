@@ -12,7 +12,7 @@ export const careersStatus = {
   mainMessage: "Our technical roster has reached peak operational alignment.",
   description: "Our core engineering teams are currently fully allocated to mission-critical initiatives. We have no active vacancies at this time.",
   ctaText: "Join Our Talent Pool",
-  ctaEmail: "careers@codeexpedition.com"
+  ctaEmail: "hr@codeexpedition.com"
 };
 
 export const careersPerks = {
@@ -26,7 +26,7 @@ export const careersPerks = {
     },
     {
       icon: Cpu,
-      title: "Mental Growth",
+      title: "Growth",
       description: "Continuous learning is in our DNA. We provide resources for certifications and exploration into new tech domains."
     },
     {
@@ -45,5 +45,5 @@ export const careersPerks = {
 export const careersStayOnRadar = {
   title: "Stay on the Radar",
   description: "Think you'd be a perfect fit? Send your portfolio or GitHub profile to our talent team and we'll reach out when a mission aligns with your skills.",
-  email: "careers@codeexpedition.com"
+  email: "hr@codeexpedition.com"
 };
