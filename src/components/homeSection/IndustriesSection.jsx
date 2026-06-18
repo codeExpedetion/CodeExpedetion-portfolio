@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { ShoppingBag, Heart, GraduationCap, Scale, ArrowRight } from 'lucide-react';
+import { ShoppingBag, Heart, LayoutDashboard, Scale, ArrowRight } from 'lucide-react';
 import Container from '../ui/Container';
 import Card from '../ui/Card';
 import { homeSectionData } from './homeSectionData';
@@ -9,7 +9,7 @@ import { homeSectionData } from './homeSectionData';
 const iconMap = {
   'Retail & E-commerce': ShoppingBag,
   'Healthcare': Heart,
-  'Education': GraduationCap,
+  'SaaS': LayoutDashboard,
   'Legal': Scale
 };
 
@@ -59,25 +59,11 @@ const IndustriesSection = () => {
                   {industry.description}
                 </p>
 
-                {/* Bottom Section: Logos and More Link on Same Line */}
-                <div className="flex items-center justify-between gap-2 pt-4 border-t border-border-subtle">
-                  {/* Company Logos */}
-                  <div className="flex items-center gap-2 flex-1 min-w-0">
-                    {industry.logos.map((logo, index) => (
-                      <div key={index} className="h-6 flex items-center justify-center flex-shrink-0">
-                        <img
-                          src={logo}
-                          alt={`Company ${index + 1}`}
-                          className="h-full w-auto max-w-[50px] object-contain opacity-70"
-                        />
-                      </div>
-                    ))}
-                  </div>
-
-                  {/* More Link */}
+                {/* More Link */}
+                <div className="pt-4 border-t border-border-subtle">
                   <Link
                     to={industry.link}
-                    className="inline-flex items-center text-xs font-bold text-brand-primary hover:text-brand-primaryDark transition-all duration-200 flex-shrink-0"
+                    className="inline-flex items-center text-xs font-bold text-brand-primary hover:text-brand-primaryDark transition-all duration-200"
                   >
                     {industry.linkText} <ArrowRight className="w-3 h-3 ml-1 transition-transform group-hover:translate-x-1" />
                   </Link>

@@ -7,7 +7,7 @@ const TrustedSection = () => {
   const { title, description, ctaText, ctaLink, logos } = homeSectionData.trusted;
 
   return (
-    <section className="bg-background-main py-12 lg:py-16">
+    <section className="bg-background-main pt-8 pb-12 lg:pt-10 lg:pb-16">
       <Container>
         <div className="text-center max-w-4xl mx-auto mb-12">
           <h2 className="text-3xl md:text-5xl font-bold text-text-primary mb-6">

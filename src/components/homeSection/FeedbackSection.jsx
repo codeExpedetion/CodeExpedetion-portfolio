@@ -3,6 +3,15 @@ import Container from '../ui/Container';
 import Card from '../ui/Card';
 import { homeSectionData } from './homeSectionData';
 
+const getInitials = (name) =>
+  name
+    .split(' ')
+    .filter(Boolean)
+    .slice(0, 2)
+    .map((part) => part[0])
+    .join('')
+    .toUpperCase();
+
 const FeedbackSection = () => {
   const { title, description, testimonials } = homeSectionData.feedback;
 
@@ -25,11 +34,22 @@ const FeedbackSection = () => {
             <Card key={testimonial.id} className="flex flex-col h-full">
               {/* Author Info at Top */}
               <div className="flex items-center gap-4 mb-6">
-                <img
-                  src={testimonial.image}
-                  alt={testimonial.name}
-                  className="w-16 h-16 rounded-full object-cover border-2 border-brand-primary"
-                />
+                {testimonial.image ? (
+                  <img
+                    src={testimonial.image}
+                    alt={testimonial.name}
+                    className="w-16 h-16 rounded-full object-cover border-2 border-brand-primary"
+                  />
+                ) : (
+                  <div
+                    aria-hidden="true"
+                    className="w-16 h-16 rounded-full border-2 border-brand-primary bg-[#E5E7EB] flex items-center justify-center flex-shrink-0"
+                  >
+                    <span className="text-lg font-semibold text-[#6B7280]">
+                      {getInitials(testimonial.name)}
+                    </span>
+                  </div>
+                )}
                 <div>
                   <h4 className="text-base font-bold text-text-primary">
                     {testimonial.name}

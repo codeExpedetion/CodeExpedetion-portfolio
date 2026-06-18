@@ -57,12 +57,10 @@ export const headerData = [
         icon: Stethoscope
       },
       {
-        // title: "EdTech",
-        title: "IT Solutions",
-        // desc: "Platforms that power modern learning",
-        desc: "Tailored IT strategies and managed technology services",
+        title: "Education",
+        desc: "Platforms that power modern learning",
         href: "/industries/education",
-        icon: LayoutDashboard
+        icon: GraduationCap
       },
       {
         title: "LegalTech",

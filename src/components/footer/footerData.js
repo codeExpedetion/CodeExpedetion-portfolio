@@ -1,4 +1,4 @@
-import { Lightbulb, Layout, Database, Shield, ShoppingCart, Stethoscope, GraduationCap, Scale, Map, Zap, BookOpen, ArrowRight, LayoutDashboard } from 'lucide-react';
+import { Lightbulb, Layout, Database, Shield, ShoppingCart, Stethoscope, GraduationCap, Scale, Map, Zap, BookOpen, ArrowRight } from 'lucide-react';
 
 export const footerData = {
   services: {
@@ -20,8 +20,7 @@ export const footerData = {
         href: "/industries/healthcare",
         icon: Stethoscope
       },
-      // { title: "EdTech", href: "/industries/education", icon: GraduationCap },
-      { title: "IT Solutions", href: "/industries/education", icon: LayoutDashboard },
+      { title: "Education", href: "/industries/education", icon: GraduationCap },
       { title: "LegalTech", href: "/industries/legal", icon: Scale },
     ],
     footerLink: { text: "View all Industries", href: "/industries", icon: ArrowRight }

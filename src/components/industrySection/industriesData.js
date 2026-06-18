@@ -62,12 +62,9 @@ export const industriesData = {
         ]
     },
     education: {
-        // heroHeading: "Our Educational Solutions",
-        heroHeading: "Our IT Solutions",
-        // heroDescription: "Revolutionize learning experiences with innovative educational technology that engages students and empowers educators.",
-        heroDescription: "We design and deliver innovative technology solutions that help businesses streamline operations, improve performance, and scale with confidence. From custom software development to intelligent digital products, we turn ideas into powerful digital experiences.",
-        // icon: GraduationCap,
-        icon: LayoutDashboard,
+        heroHeading: "Our Educational Solutions",
+        heroDescription: "Revolutionize learning experiences with innovative educational technology that engages students and empowers educators.",
+        icon: GraduationCap,
         cards: [
             {
                 icon: LayoutDashboard,
@@ -184,7 +181,7 @@ export const industriesData = {
     */
     hospitality: {
         // heroHeading: "Our Hospitality Solutions",
-        heroHeading: "Engineering Scalable Digital Solutions",
+        heroHeading: "Our Enterprise Software Solutions",
         // heroDescription: "Elevate guest experiences and optimize operations with innovative hospitality technology that drives satisfaction and revenue growth.",
         heroDescription: "We design and develop enterprise-grade software systems that help businesses innovate, automate operations, and scale with confidence.",
         // icon: Plane,
@@ -476,12 +473,10 @@ export const industries = [
     },
     {
         id: 3,
-        // title: "EdTech",
-        title: "IT Solutions",
+        title: "Education",
         icon: industriesData.education.icon,
         href: "/industries/education",
-        // description: "Create engaging learning platforms and educational management systems that revolutionize the way knowledge is delivered and managed."
-        description: "Transform education with digital learning platforms and innovative educational technology that empowers students and educators."
+        description: "Create engaging learning platforms and educational management systems that revolutionize the way knowledge is delivered and managed."
     },
     {
         id: 4,
@@ -507,7 +502,7 @@ export const industries = [
     {
         id: 7,
         // title: "Hospitality & Travel",
-        title: "Digital Engineering",
+        title: "Enterprise Software Solutions",
         icon: industriesData.hospitality.icon,
         href: "/industries/hospitality",
         // description: "Enhance guest experiences and streamline operations with innovative hospitality management solutions."
