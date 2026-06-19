@@ -221,7 +221,7 @@ export const transformSectionData = {
     primaryCTA: { text: "Explore AI Solutions", to: "/contact" },
     secondaryCTA: { text: "See AI Expertise", to: "/services/ai" }
   },
-  '/use-cases/forio': {
+  '/use-cases/foriio': {
     title: "Create Immersive Learning Experiences",
     description: "Build interactive simulations and modeling tools that transform training and strategic decision-making.",
     primaryCTA: { text: "Start Building", to: "/contact" },

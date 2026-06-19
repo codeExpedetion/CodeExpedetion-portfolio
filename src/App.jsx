@@ -17,7 +17,7 @@ import Fitforever from './pages/SuccessStories/Fitforever';
 import XPO from './pages/SuccessStories/XPO';
 import NowMassage from './pages/SuccessStories/NowMassage';
 import Aggero from './pages/SuccessStories/Aggero';
-import Forio from './pages/SuccessStories/Forio';
+import Foriio from './pages/SuccessStories/Foriio';
 
 import SuccessSection from './components/commonSection/SuccessSection';
 import TransformSection from './components/commonSection/TransformSection';
@@ -74,7 +74,7 @@ function App() {
           <Route path="/use-cases/xpo" element={<XPO />} />
           <Route path="/use-cases/now-massage" element={<NowMassage />} />
           <Route path="/use-cases/aggero" element={<Aggero />} />
-          <Route path="/use-cases/forio" element={<Forio />} />
+          <Route path="/use-cases/foriio" element={<Foriio />} />
 
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
