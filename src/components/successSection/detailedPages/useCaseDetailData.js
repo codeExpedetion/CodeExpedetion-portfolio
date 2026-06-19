@@ -1,9 +1,17 @@
+import upmailHeroImg from '../../../assets/ProjectPortfolios/upmail-ss.png';
+import xpoHeroImg from '../../../assets/ProjectPortfolios/xpo-project-ss.png';
+import fitforeverHeroImg from '../../../assets/ProjectPortfolios/forever-ss.png';
+import foriioHeroImg from '../../../assets/ProjectPortfolios/foriio-ss.png';
+import nowMassageHeroImg from '../../../assets/ProjectPortfolios/the-now-ss.png';
+
 export const useCaseDetailData = {
     upmail: {
         name: "Upmail",
         platform: "Web",
         industry: "SaaS",
         technologies: ["Ruby on Rails", "Python", "Elixir", "VueJs", "Heroku", "Sentry"],
+        heroImage: upmailHeroImg,
+        heroImageAlt: "Upmail platform screenshot",
         overview: "Upmail Solutions is a customer engagement platform designed specifically for hotel sales teams. It enables teams to effortlessly connect with clients by sending visually appealing emails, personalized contracts, and detailed event booking information. By centralizing communication and integrating key booking systems, Upmail simplifies the sales workflow and ensures that clients receive accurate, timely, and professional proposals. The platform integrates with major hotel booking and management systems, including Opera, Meeting Broker, Amadeus, and Salesforce, allowing sales teams to embed real-time booking details directly into their emails. This integration reduces manual effort, minimizes errors, and streamlines client communication, making it easier to close deals and enhance customer satisfaction.",
         solution: [
             {
@@ -39,6 +47,8 @@ export const useCaseDetailData = {
         platform: "Web & Mobile",
         industry: "Fitness",
         technologies: ["Ruby on Rails", "Python", "VueJs", "Flutter", "AWS", "Datadog", "Rollbar"],
+        heroImage: fitforeverHeroImg,
+        heroImageAlt: "FitForever platform screenshot",
         overview: "FitForever is a digital fitness platform designed to provide personalized, assessment-based training programs for users of all fitness levels. Developed with input from top U.S. medical and biomechanics experts, the platform enables trainers to deliver specialized workouts, sell training programs, and engage clients effectively. The platform includes a mobile application that allows users to access customized video-based training plans, track progress using proprietary metrics like the FIT Score, and participate in referral programs. It also integrates specialized apps, such as GolfForever, to cater to niche sports and wellness programs.",
         solution: [
             {
@@ -83,6 +93,8 @@ export const useCaseDetailData = {
         platform: "Web + Android + iOS",
         industry: "Fitness / Wellness",
         technologies: ["Rails", "React", "Heroku", "React Native"],
+        heroImage: xpoHeroImg,
+        heroImageAlt: "Xponential Fitness platform screenshot",
         overview: "Xponential Fitness is a global boutique fitness franchisor that operates a diversified portfolio of specialized wellness brands across categories such as Pilates, barre, yoga, stretching, strength training, and cycling. The company follows a franchise-driven business model, enabling independent studio owners to operate under established brand names while receiving centralized support in marketing, training, technology, and operations. By combining premium in-studio experiences with digital fitness offerings and scalable franchise systems, Xponential Fitness aims to expand internationally and build one of the largest curated networks of boutique fitness and wellness brands worldwide.",
         challenge: "Xponential Fitness was facing the challenge of scaling a rapidly growing, multi-brand franchise ecosystem while maintaining operational consistency and brand identity across thousands of studio locations. With different fitness concepts operating under one parent company, there were complexities around standardizing technology, reporting, membership models, and customer experience across brands and regions. As the company managed multiple distinct brands, new feature requirements often emerged that were unique to specific concepts, requiring tailored implementations without disrupting the shared platform architecture. Balancing rapid expansion, franchisee satisfaction, brand-specific innovation, and centralized control while ensuring sustainable profitability was a key business challenge the organization needed to address.",
         solution: [
@@ -112,6 +124,8 @@ export const useCaseDetailData = {
         platform: "Web + Android + iOS",
         industry: "Wellness",
         technologies: ["Ruby on Rails", "React", "React Native", "Heroku"],
+        heroImage: nowMassageHeroImg,
+        heroImageAlt: "The NOW Massage platform screenshot",
         overview: "The NOW Massage is a modern wellness and self-care brand that offers approachable, high-quality massage therapy in a relaxed boutique setting. Positioned between traditional spas and quick massage chains, it provides customizable treatment options including signature massages and therapeutic enhancements designed to help clients de-stress, restore balance, and improve well-being. With a focus on accessibility, comfort, and a sleek guest experience, The NOW Massage has expanded through franchised locations, making therapeutic bodywork services more convenient and appealing to a wide audience seeking regular self-care.",
         challenge: "The main challenge for The NOW Massage was that the platform was originally built on a WordPress-based architecture, which caused performance and scalability limitations as traffic increased. The system struggled to handle high user load, resulting in slow page responses and overall lagging user experience. Additionally, introducing new business features was difficult because WordPress had limited plugin flexibility, forcing the team to rely on multiple third-party tools for admin management and operational workflows. This fragmented setup made system maintenance complex, slowed feature development, and created challenges in delivering a seamless and modern digital experience for both customers and franchise operators.",
         solution: [
@@ -170,12 +184,14 @@ export const useCaseDetailData = {
         ]
     },
 
-    forio: {
-        name: "Forio",
+    foriio: {
+        name: "Foriio",
         platform: "Web",
         industry: "EdTech / Simulation",
         technologies: ["Ruby on Rails", "Python", "React", "D3.js", "AWS", "PostgreSQL"],
-        overview: "Forio is an interactive simulation platform that enables organizations, universities, and enterprises to model complex business scenarios and train teams through experiential learning. By creating realistic, data-driven simulations, Forio empowers learners to make strategic decisions in risk-free environments, bridging the gap between theoretical knowledge and real-world application. Used by leading business schools and Fortune 500 companies, the platform supports custom simulation authoring, real-time multiplayer experiences, and comprehensive analytics to measure learning outcomes and participant engagement.",
+        heroImage: foriioHeroImg,
+        heroImageAlt: "Foriio platform screenshot",
+        overview: "Foriio is an interactive simulation platform that enables organizations, universities, and enterprises to model complex business scenarios and train teams through experiential learning. By creating realistic, data-driven simulations, Foriio empowers learners to make strategic decisions in risk-free environments, bridging the gap between theoretical knowledge and real-world application. Used by leading business schools and Fortune 500 companies, the platform supports custom simulation authoring, real-time multiplayer experiences, and comprehensive analytics to measure learning outcomes and participant engagement.",
         solution: [
             {
                 title: "Custom Simulation Authoring Engine",

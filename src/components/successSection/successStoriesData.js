@@ -85,8 +85,8 @@ export const successStories = [
   },
   {
     id: 6,
-    title: "Forio: Interactive Simulation Platform for Business Strategy and Decision-Making Training",
-    description: "Forio provides an interactive simulation platform that enables organizations to model complex business scenarios, train teams through experiential learning, and make data-driven strategic decisions.",
+    title: "Foriio: Interactive Simulation Platform for Business Strategy and Decision-Making Training",
+    description: "Foriio provides an interactive simulation platform that enables organizations to model complex business scenarios, train teams through experiential learning, and make data-driven strategic decisions.",
     image: null,
     industry: "EdTech",
     keyResults: [
@@ -95,7 +95,7 @@ export const successStories = [
       "Developed real-time analytics dashboards to track participant performance and learning outcome metrics.",
     ],
     technologies: ["Ruby on Rails", "Python", "React", "D3.js", "AWS", "PostgreSQL"],
-    slug: "forio"
+    slug: "foriio"
   }
 ];
 

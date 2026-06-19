@@ -1,4 +1,4 @@
-import { Cloud, Database, Server, Zap, Settings, Shield, FileCheck, Lock, UserCheck, AlertTriangle, Users, Briefcase, UserPlus, Target, Headphones, Code2, Smartphone, Globe, Layers, Cpu, Palette, CheckCircle, Rocket, Award, TrendingUp, BarChart3, Brain, Network, Bot, FileText, Search, Sparkles, ShoppingCart, Stethoscope, Clock, GraduationCap, Wallet } from 'lucide-react';
+import { Cloud, Database, Server, Zap, Settings, Shield, FileCheck, Lock, UserCheck, AlertTriangle, Users, Briefcase, UserPlus, Target, Headphones, Code2, Smartphone, Globe, Layers, Cpu, Palette, CheckCircle, Rocket, Award, TrendingUp, BarChart3, Brain, Network, Bot, FileText, Search, Sparkles, ShoppingCart, Stethoscope, Clock, GraduationCap, Wallet, LayoutDashboard } from 'lucide-react';
 
 // Technology Icons for Application Development
 import reactIcon from '../../assets/Technologies/react.svg';
@@ -8,19 +8,21 @@ import angularIcon from '../../assets/Technologies/angular.svg';
 import typescriptIcon from '../../assets/Technologies/typescript.svg';
 import nodejsIcon from '../../assets/Technologies/nodejs.svg';
 import pythonIcon from '../../assets/Technologies/python.svg';
+import rubyIcon from '../../assets/Technologies/ruby.svg';
 import javaIcon from '../../assets/Technologies/java.svg';
 import dotnetIcon from '../../assets/Technologies/dotnet.svg';
 import swiftIcon from '../../assets/Technologies/swift.svg';
 import postgresqlIcon from '../../assets/Technologies/postgresql.svg';
 import mongodbIcon from '../../assets/Technologies/mongodb.svg';
 import mysqlIcon from '../../assets/Technologies/mysql.svg';
-import redisIcon from '../../assets/Technologies/redis.svg';
+import dynamodbIcon from '../../assets/Technologies/ddb-aws.png';
 import elasticsearchIcon from '../../assets/Technologies/elasticsearch.svg';
 import awsIcon from '../../assets/Technologies/aws.svg';
 import azureIcon from '../../assets/Technologies/azure.svg';
 import gcpIcon from '../../assets/Technologies/gcp.svg';
 import dockerIcon from '../../assets/Technologies/docker.svg';
 import kubernetesIcon from '../../assets/Technologies/kubernetes.svg';
+import herokuIcon from '../../assets/Technologies/heroku-logo-png.png';
 import websocketIcon from '../../assets/Technologies/websocket.svg';
 
 // AI Service Images
@@ -526,9 +528,10 @@ export const servicesData = {
             { name: "JavaScript", icon: nodejsIcon, description: "Frontend & Backend" },
             { name: "TypeScript", icon: typescriptIcon, description: "Full-stack Development" },
             { name: "Python", icon: pythonIcon, description: "Backend & AI" },
+            { name: "Ruby", icon: rubyIcon, description: "Backend Development" },
+            { name: "C#", icon: dotnetIcon, description: "Enterprise & .NET Development" },
             { name: "Java", icon: javaIcon, description: "Enterprise Development" },
             { name: "Swift", icon: swiftIcon, description: "iOS Development" },
-            { name: "Ruby", icon: pythonIcon, description: "Backend Development" } // Reusing an icon temporarily since there might be no ruby icon imported. 
           ]
         },
         {
@@ -545,6 +548,7 @@ export const servicesData = {
           subtitle: "Backend Frameworks",
           technologies: [
             { name: "Node.js", icon: nodejsIcon, description: "API Development" },
+            { name: "Ruby on Rails", icon: rubyIcon, description: "Web Applications" },
             { name: "Python", icon: pythonIcon, description: "Python Framework" },
             { name: ".NET", icon: dotnetIcon, description: "Enterprise Solutions" },
             { name: "Spring Boot", icon: javaIcon, description: "Java Framework" },
@@ -557,7 +561,7 @@ export const servicesData = {
             { name: "PostgreSQL", icon: postgresqlIcon },
             { name: "MongoDB", icon: mongodbIcon },
             { name: "MySQL", icon: mysqlIcon },
-            { name: "Redis", icon: redisIcon },
+            { name: "DynamoDB", icon: dynamodbIcon },
             { name: "Elasticsearch", icon: elasticsearchIcon }
           ]
         },
@@ -568,7 +572,8 @@ export const servicesData = {
             { name: "Azure", icon: azureIcon },
             { name: "Google Cloud", icon: gcpIcon },
             { name: "Docker", icon: dockerIcon },
-            { name: "Kubernetes", icon: kubernetesIcon }
+            { name: "Kubernetes", icon: kubernetesIcon },
+            { name: "Heroku", icon: herokuIcon }
           ]
         }
       ]
@@ -593,6 +598,11 @@ export const servicesData = {
           description: "Banking platforms, payment processors, and investment tools with bank-grade security, real-time data processing, and regulatory compliance built in from day one."
         },
         {
+          icon: LayoutDashboard,
+          title: "SaaS",
+          description: "Scalable, multi-tenant platforms with subscription billing, secure payments, and advanced analytics that help software businesses grow and retain customers."
+        },
+        {
           icon: Rocket,
           title: "Education",
           description: "Learning platforms, student management systems, and virtual classrooms that make education more accessible and engaging for students and educators alike."
@@ -610,7 +620,7 @@ export const servicesData = {
       faqs: [
         {
           question: "How long does it take to build an application?",
-          answer: "It depends on scope and complexity. A focused MVP might take 8-12 weeks, while a full-featured platform could be 6-9 months. We'll give you a realistic timeline after understanding your requirements—no inflated estimates or surprise delays."
+          answer: "It depends on scope and complexity. A focused MVP might take 8-12 weeks, while a full-featured platform could be 4-6 months. We'll give you a realistic timeline after understanding your requirements—no inflated estimates or surprise delays."
         },
         {
           question: "Can you build for both iOS and Android?",
@@ -633,12 +643,12 @@ export const servicesData = {
         {
           icon: Award,
           title: "We've Done This Before",
-          description: "Hundreds of applications shipped across industries. We know what works, what doesn't, and how to avoid common pitfalls that derail projects."
+          description: "Dozens of applications delivered across industries. We know what works, what doesn't, and how to avoid common pitfalls that derail projects."
         },
         {
           icon: Rocket,
           title: "Iterative Development",
-          description: "You see working software every two weeks, not after months of silence. We adapt as requirements evolve instead of rigidly following outdated specs."
+          description: "You see working software every week, not after months of silence. We adapt as requirements evolve instead of rigidly following outdated specs."
         },
         {
           icon: CheckCircle,
@@ -981,7 +991,10 @@ export const servicesData = {
           description: "Robust frameworks for AI engineering.",
           points: [
             "LangChain & LangGraph",
-            "Model orchestration pipelines"
+            "Model orchestration pipelines",
+            "AutoGen",
+            "Vapi AI (Voice Agents)",
+            "RAG (Retrieval-Augmented Generation)"
           ]
         },
         {
@@ -990,8 +1003,10 @@ export const servicesData = {
           description: "Secure and scalable environments for your AI applications.",
           points: [
             "Vector databases",
+            "Data Processing",
             "Secure cloud environments",
-            "Custom AI dashboards"
+            "Custom AI dashboards",
+            "Containerization & Deployment"
           ]
         }
       ]

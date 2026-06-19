@@ -7,10 +7,12 @@ import { ArrowLeft, Globe, Cpu, Layers, CheckCircle2 } from 'lucide-react';
 const UseCaseDetail = ({ data }) => {
     if (!data) return null;
 
+    const { heroImage } = data;
+
     return (
         <div className="bg-background-main min-h-screen">
             {/* Hero Section */}
-            <section className="relative overflow-hidden bg-gradient-to-br from-background-section to-background-main py-16 lg:py-24">
+            <section className={`relative overflow-hidden bg-gradient-to-br from-background-section to-background-main ${heroImage ? 'py-10 lg:py-12' : 'py-16 lg:py-24'}`}>
                 {/* Background Decorative Elements */}
                 <div className="absolute top-0 left-0 w-full h-full overflow-hidden pointer-events-none opacity-40">
                     <div className="absolute top-[-10%] right-[-5%] w-[40%] h-[80%] bg-brand-primary/20 rounded-full blur-[120px]"></div>
@@ -18,46 +20,59 @@ const UseCaseDetail = ({ data }) => {
                 </div>
 
                 <Container className="relative z-10">
-                    {/* Back Link */}
-                    <Link
-                        to="/use-cases"
-                        className="inline-flex items-center gap-2 text-text-secondary hover:text-brand-primary transition-colors duration-300 mb-8 group"
-                    >
-                        <ArrowLeft className="w-4 h-4 group-hover:-translate-x-1 transition-transform duration-300" />
-                        <span className="text-sm font-medium">Back to Use Cases</span>
-                    </Link>
+                    <div className={heroImage ? 'lg:grid lg:grid-cols-2 lg:gap-10 xl:gap-12 lg:items-stretch' : undefined}>
+                        <Link
+                            to="/use-cases"
+                            className={`inline-flex items-center gap-2 text-text-secondary hover:text-brand-primary transition-colors duration-300 group ${heroImage ? 'mb-6 lg:mb-0 lg:col-start-1 lg:row-start-1' : 'mb-8'}`}
+                        >
+                            <ArrowLeft className="w-4 h-4 group-hover:-translate-x-1 transition-transform duration-300" />
+                            <span className="text-sm font-medium">Back to Use Cases</span>
+                        </Link>
 
-                    {/* Meta Info */}
-                    <div className="flex flex-wrap gap-3 mb-6">
-                        {data.platform && (
-                            <span className="inline-flex items-center gap-1.5 text-xs uppercase tracking-wider font-bold text-text-secondary bg-white px-3 py-1.5 rounded-full shadow-sm border border-black/5">
-                                <Globe className="w-3 h-3" />
-                                {data.platform}
-                            </span>
+                        <div className={heroImage ? 'lg:col-start-1 lg:row-start-2 lg:flex lg:flex-col lg:justify-center' : undefined}>
+                            {/* Meta Info */}
+                            <div className="flex flex-wrap gap-3 mb-6">
+                                {data.platform && (
+                                    <span className="inline-flex items-center gap-1.5 text-xs uppercase tracking-wider font-bold text-text-secondary bg-white px-3 py-1.5 rounded-full shadow-sm border border-black/5">
+                                        <Globe className="w-3 h-3" />
+                                        {data.platform}
+                                    </span>
+                                )}
+                                {data.industry && (
+                                    <span className="inline-flex items-center gap-1.5 text-xs uppercase tracking-wider font-bold text-brand-primary bg-brand-primary/10 px-3 py-1.5 rounded-full">
+                                        <Cpu className="w-3 h-3" />
+                                        {data.industry}
+                                    </span>
+                                )}
+                            </div>
+
+                            {/* Project Name */}
+                            <h1 className="text-3xl md:text-4xl lg:text-5xl font-extrabold text-text-primary mb-6 tracking-tight leading-[1.1]">
+                                {data.name}
+                            </h1>
+
+                            {/* Technologies */}
+                            <div className={`flex flex-wrap gap-2 ${heroImage ? 'mb-8 lg:mb-0' : 'mb-8'}`}>
+                                {data.technologies.map((tech, idx) => (
+                                    <span
+                                        key={idx}
+                                        className="text-[11px] whitespace-nowrap font-bold text-text-tertiary bg-white/80 px-3 py-1.5 rounded-lg border border-border-subtle/40"
+                                    >
+                                        {tech}
+                                    </span>
+                                ))}
+                            </div>
+                        </div>
+
+                        {heroImage && (
+                            <div className="mt-8 lg:mt-0 lg:col-start-2 lg:row-start-1 lg:row-span-2 flex items-center justify-center lg:justify-end min-h-0">
+                                <img
+                                    src={heroImage}
+                                    alt={data.heroImageAlt || data.name}
+                                    className="w-full max-h-56 sm:max-h-72 lg:max-h-none lg:h-full lg:w-auto lg:max-w-full object-contain object-center lg:object-right rounded-xl shadow-lg"
+                                />
+                            </div>
                         )}
-                        {data.industry && (
-                            <span className="inline-flex items-center gap-1.5 text-xs uppercase tracking-wider font-bold text-brand-primary bg-brand-primary/10 px-3 py-1.5 rounded-full">
-                                <Cpu className="w-3 h-3" />
-                                {data.industry}
-                            </span>
-                        )}
-                    </div>
-
-                    {/* Project Name */}
-                    <h1 className="text-3xl md:text-4xl lg:text-5xl font-extrabold text-text-primary mb-6 tracking-tight leading-[1.1]">
-                        {data.name}
-                    </h1>
-
-                    {/* Technologies */}
-                    <div className="flex flex-wrap gap-2 mb-8">
-                        {data.technologies.map((tech, idx) => (
-                            <span
-                                key={idx}
-                                className="text-[11px] whitespace-nowrap font-bold text-text-tertiary bg-white/80 px-3 py-1.5 rounded-lg border border-border-subtle/40"
-                            >
-                                {tech}
-                            </span>
-                        ))}
                     </div>
                 </Container>
             </section>

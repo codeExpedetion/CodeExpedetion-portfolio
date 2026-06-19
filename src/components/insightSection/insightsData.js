@@ -24,7 +24,7 @@ import rubyIcon from '../../assets/Technologies/ruby.svg';
 import postgresqlIcon from '../../assets/Technologies/postgresql.svg';
 import mongodbIcon from '../../assets/Technologies/mongodb.svg';
 import mysqlIcon from '../../assets/Technologies/mysql.svg';
-import redisIcon from '../../assets/Technologies/redis.svg';
+import dynamodbIcon from '../../assets/Technologies/ddb-aws.png';
 import elasticsearchIcon from '../../assets/Technologies/elasticsearch.svg';
 import s3Icon from '../../assets/Technologies/s3.svg';
 
@@ -184,7 +184,7 @@ export const insightsData = {
           { name: "PostgreSQL", icon: postgresqlIcon },
           { name: "MongoDB", icon: mongodbIcon },
           { name: "MySQL", icon: mysqlIcon },
-          { name: "Redis", icon: redisIcon },
+          { name: "DynamoDB", icon: dynamodbIcon },
           { name: "Elasticsearch", icon: elasticsearchIcon },
           { name: "Amazon S3", icon: s3Icon }
         ]
@@ -409,7 +409,7 @@ export const insights = [
       "Modern frontend frameworks (React, Vue, Next.js)",
       "Scalable backend technologies (Node, Python, Go)",
       "Cloud infrastructure (AWS, Azure, Google Cloud)",
-      "Database solutions (SQL, NoSQL, Redis)",
+      "Database solutions (SQL, NoSQL, DynamoDB)",
       "DevOps tools & monitoring platforms"
     ]
   }

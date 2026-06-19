@@ -2,6 +2,6 @@ import React from 'react';
 import UseCaseDetail from '../../components/successSection/detailedPages/UseCaseDetail';
 import { useCaseDetailData } from '../../components/successSection/detailedPages/useCaseDetailData';
 
-const Forio = () => <UseCaseDetail data={useCaseDetailData.forio} />;
+const Foriio = () => <UseCaseDetail data={useCaseDetailData.foriio} />;
 
-export default Forio;
+export default Foriio;

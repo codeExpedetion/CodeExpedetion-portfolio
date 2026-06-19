@@ -44,7 +44,7 @@ const Footer = () => {
                 <Github className="w-6 h-6" />
               </a>
               <a
-                href="https://instagram.com"
+                href="https://www.instagram.com/code.expedition/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-white/60 hover:text-brand-primary transition-colors duration-300"
