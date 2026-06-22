@@ -327,10 +327,6 @@ export const homeSectionData = {
         multiplier: "3x",
         title: "Developer Productivity",
         description: "Our AI-powered development process accelerates delivery while maintaining high quality standards"
-      },
-      cta: {
-        text: "Browse Our Vibe Coders",
-        link: "/about"
       }
     }
   },
