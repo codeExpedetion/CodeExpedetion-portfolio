@@ -49,16 +49,29 @@ export const aboutValues = {
   ]
 };
 
-export const aboutLeadership = {
-  title: "Executive Leadership",
-  description: "The visionaries orchestrating our global engineering mission.",
-  members: [
-    { name: "Khurram Zaman", role: "Chief Executive Officer", initials: "KZ", bio: "Leading the global strategic evolution of Code Expedition with a focus on sustainable innovation." },
-    { name: "Umair Siddique", role: "Chief Technology Officer", initials: "US", bio: "Architecting high-scale infrastructure and spearheading our R&D in autonomous AI systems." },
-    { name: "Nadeem Yasin", role: "Engineering Manager", initials: "NY", bio: "Orchestrating elite development teams to deliver mission-critical software with clinical precision." },
-    { name: "Abdul Basit", role: "Engineering Manager", initials: "AB", bio: "Cultivating a culture of technical rigor and rapid execution across our core engineering pods." },
-    { name: "Bilal Saeed", role: "Revenue & Sales Lead", initials: "BS", bio: "Bridging enterprise challenges with technical solutions through strategic, value-driven partnerships." },
-    { name: "Kamran Zahid", role: "Strategic Growth Lead", initials: "KZ", bio: "Masterminding market expansion efforts to ensure our brand resonance matches our technical excellence." },
-    { name: "Hamza Mansoor", role: "Operations Lead", initials: "HM", bio: "Streamlining global delivery frameworks to maintain peak operational efficiency across all project lifecycles." }
+export const aboutFAQ = {
+  title: "Frequently Asked Questions",
+  description: "Common questions about working with CodeExpedition on your next software project.",
+  faqs: [
+    {
+      question: "What are the requirements for getting your desired software development?",
+      answer: "To get started, we need a clear understanding of your business goals, target users, and core functionality. A project brief, existing documentation, or even a rough idea is enough for an initial conversation. From there, we help define scope, priorities, timelines, and technical requirements so the solution aligns with your budget and growth plans."
+    },
+    {
+      question: "What software development services does CodeExpedition offer?",
+      answer: "We offer end-to-end software development including AI services, custom web and mobile application development, cloud infrastructure and migrations, and security and compliance solutions. Whether you need a new product built from scratch, legacy modernization, or ongoing engineering support, our teams deliver scalable, production-ready software tailored to your business."
+    },
+    {
+      question: "What is the CodeExpedition software development process?",
+      answer: "Our process starts with discovery and requirements alignment, followed by architecture planning and iterative development. You receive regular demos and transparent progress updates throughout the build. We emphasize quality through code reviews, testing, and performance checks before launch, and we support smooth deployment and post-release improvements."
+    },
+    {
+      question: "Why should you choose software development for your business?",
+      answer: "Custom software helps businesses automate workflows, improve customer experience, and create competitive advantages that off-the-shelf tools cannot provide. A well-built application reduces manual effort, increases operational efficiency, and scales with your growth—turning technology into a long-term business asset rather than a recurring limitation."
+    },
+    {
+      question: "Why is software development outsourcing important?",
+      answer: "Software development outsourcing helps businesses achieve strategic business objectives with greater ROI. Companies can benefit from an exceptional pool of talent by outsourcing their software development projects without having to build an in-house team."
+    }
   ]
 };

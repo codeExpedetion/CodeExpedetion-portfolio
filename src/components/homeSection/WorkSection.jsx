@@ -1,5 +1,5 @@
 import React from 'react';
-import { Home, Zap, Trophy, ArrowRight, CheckCircle2 } from 'lucide-react';
+import { Home, Zap, Trophy, CheckCircle2 } from 'lucide-react';
 import Container from '../ui/Container';
 import Card from '../ui/Card';
 import { homeSectionData } from './homeSectionData';
@@ -124,14 +124,6 @@ const WorkSection = () => {
                       {vibeCode.stats.description}
                     </p>
                   </div>
-
-                  <a
-                    href={vibeCode.cta.link}
-                    className="inline-flex items-center justify-center w-full lg:w-auto px-6 py-3.5 text-base font-bold text-white bg-brand-primary hover:bg-brand-primaryDark rounded-lg transition-all duration-200 shadow-sm group"
-                  >
-                    {vibeCode.cta.text}
-                    <ArrowRight className="w-5 h-5 ml-2 transition-transform duration-200 group-hover:translate-x-1" />
-                  </a>
                 </div>
               </div>
             </div>
